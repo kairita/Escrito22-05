@@ -25,6 +25,12 @@
         if(!is_numeric($_POST['telefono'])){
             echo "El teléfono debe ser ingresado en números <br><br>";
         }
+        if (!strpos($_POST['email'], "@")){
+            echo "Ingrese su e-mail de forma correcta <br><br>";
+        }
+        else{
+            echo"Datos ingresados con éxtio";
+        }
   }
   ValidarCampos();
  
