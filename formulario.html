@@ -9,14 +9,15 @@
 </head>
 
 <body>
-    <form id="formulario" action="/formulario.php" method="post">
+    <h1>Formulario</h1>
+    <form id="formulario" action="formulario.php" method="post">
             Nombre: <input type="text" name="nombre" id="nombre"> <br> <br> 
             Apellido: <input type="text" name="apellido" id="apellido"> <br> <br> 
             Teléfono: <input type="tel" name="telefono" id="telefono"><br> <br> 
             Edad: <input type="number" name="edad" id="edad"> <br> <br> 
             Fecha de nacimiento: <input type="date" name="fechadenacimiento" id="fechadenacimiento"><br> <br> 
             Email: <input type="email" name="email" id="email"> <br><br> 
-            <button type="button" onclick="validar()">Enviar</button>
-     </form>
+            <input type="submit" value="Enviar" class="submit">    
+        </form>
 </body>
 </html>
