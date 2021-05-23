@@ -1,9 +1,9 @@
 <?php 
 
-const IP= "127.0.0.1";
-const USUARIO="root";
+const IP= "";
+const USUARIO="";
 const PASS="";
-const NOMBREBD="KAIRA";
+const NOMBREBD="";
 
 
 
