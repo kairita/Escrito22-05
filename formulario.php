@@ -1,9 +1,10 @@
 <?php 
 
    require "validaciones.php";
+   require "conexionbd.php";
 
    function insertar($nombre,$apellido,$telefono,$edad,$fechadenacimiento,$email){
-       $conexion = new mysqli("127.0.0.1","root","","KAIRA");
+       $conexion = new mysqli(IP,USUARIO,PASS,NOMBREBD);
        $sql = "INSERT INTO persona(nombre,apellido,telefono,edad,fechadenacimiento,email) VALUES ('$nombre','$apellido','$telefono','$edad','$fechadenacimiento','$email')";
        $conexion -> query($sql);
        $conexion -> close();
@@ -18,5 +19,5 @@
            $_POST['fechadenacimiento'],
            $_POST['email']
        );
-       echo "Ta pronto";
+       echo "Datos ingresados con éxito";
    
